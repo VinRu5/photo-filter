@@ -2,6 +2,10 @@
 const image = document.getElementById('filtered-image');
 const grayScaleRange = <HTMLInputElement>document.getElementById('gray-scale');
 const brightnessRange = <HTMLInputElement>document.getElementById('brightness');
+const contrastRange = <HTMLInputElement>document.getElementById('contrast');
+const opacityRange = <HTMLInputElement>document.getElementById('opacity');
+const sepiaRange = <HTMLInputElement>document.getElementById('sepia');
+const invertRange = <HTMLInputElement>document.getElementById('invert');
 
 //creo interfaccia 
 
@@ -56,5 +60,37 @@ grayScaleRange.addEventListener('input', ()=> {
 brightnessRange.addEventListener('input', () => {
 
     setFilter('brightness', brightnessRange);
+
+})
+
+//gestisco il Contrast Range
+
+contrastRange.addEventListener('input', () => {
+
+    setFilter('contrast', contrastRange);
+
+})
+
+//gestisco il Opacity Range
+
+opacityRange.addEventListener('input', () => {
+
+    setFilter('opacity', opacityRange);
+
+})
+
+//gestisco il Sepia Range
+
+sepiaRange.addEventListener('input', () => {
+
+    setFilter('sepia', sepiaRange);
+
+})
+
+//gestisco il Invert Range
+
+invertRange.addEventListener('input', () => {
+
+    setFilter('invert', invertRange);
 
 })
