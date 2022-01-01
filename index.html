@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Filter</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main class="app">
+        <div class="img-container">
+            <img id="filtered-image" src="./img/donna-colore-02.jpg" alt="foto">
+        </div>
+
+        <div class="filters">
+            <div class="filter">
+                
+                <input type="range" id="gray-scale" min="0" max="100" value="30">
+                <label id="gray-scale" class="filter-text">Gray Scale</label id="gray-scale">
+                
+            </div>
+        </div>
+    </main>
+    <script src="./build/main.js"></script>
+</body>
+</html>
